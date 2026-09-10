@@ -1,0 +1,14 @@
+
+version: 2
+
+sources:
+  - name: snowflake_sample
+    database: SNOWFLAKE_SAMPLE_DATA  # Read-only source database
+    schema: TPCH_SF1                 # Desired schema
+    tables:
+      - name: customer
+        identifier: customer
+      - name: orders
+        identifier: orders
+      - name: lineitem
+        identifier: lineitem
